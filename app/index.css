@@ -1,0 +1,23 @@
+/* Pure MUI Application - No Custom CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Remove any default styling that might interfere with MUI */
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
