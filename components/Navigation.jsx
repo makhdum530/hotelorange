@@ -158,7 +158,9 @@ const Navigation = () => {
                     "&:hover": {
                       backgroundColor: "primary.light",
                       color: "white",
-                      transform: "translateY(-2px)"
+                      transform: "translateY(-2px)",
+                      borderRadius: 2,
+                      transition: "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
                     },
                     "&::after": {
                       content: '""',
@@ -179,6 +181,7 @@ const Navigation = () => {
                 >
                   {item.label}
                 </Button>
+              
               ))}
             </Box>
           )}

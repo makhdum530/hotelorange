@@ -24,8 +24,8 @@ import {
   Headset,
   LocalBar
 } from "@mui/icons-material"
-const restaurantImage = '/restaurant-interior.jpg';
-const guesthouseImage = '/guesthouse-room.jpg';
+const restaurantImage = '/slider4.jpg';
+const guesthouseImage = '/superior_rom.jpg';
 
 const ServicesSection = () => {
   return (
@@ -235,7 +235,7 @@ const ServicesSection = () => {
                   >
                     <LocalBar fontSize="small" />
                   </Paper>
-                  <Typography variant="body2">Premium Bar</Typography>
+                  <Typography variant="body2">Juice Bar</Typography>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                   <Paper
@@ -262,7 +262,6 @@ const ServicesSection = () => {
                   variant="outlined"
                 />
                 <Chip label="Private Dining" size="small" variant="outlined" />
-                <Chip label="Wine Selection" size="small" variant="outlined" />
               </Stack>
             </CardContent>
           </Card>

@@ -50,7 +50,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Hotel Orange International"
-              style={{ height: "64px", width: "auto" }}
+              style={{ height: "64px", width: "64px" }}
             />
             <Typography variant="h6" color="primary" fontWeight="bold">
               ABOUT HOTEL ORANGE INTERNATIONAL

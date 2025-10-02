@@ -9,8 +9,9 @@ import {
   Zoom
 } from "@mui/material"
 import Link from "next/link";
-// import heroImage from "@/assets/hotel-hero.jpg"
-const heroImage = '/hotel-hero.jpg';
+
+// const heroImage = '/hotel-hero.jpg';
+const heroImage = '/slider2.jpg';
 
 const HeroSection = () => {
   return (
@@ -46,7 +47,7 @@ const HeroSection = () => {
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
         <Box sx={{ textAlign: "center", px: 2 }}>
-          <Fade in timeout={1200}>
+          {/* <Fade in timeout={1200}>
             <Typography
               variant="h1"
               component="h1"
@@ -70,7 +71,7 @@ const HeroSection = () => {
                 International
               </Box>
             </Typography>
-          </Fade>
+          </Fade> */}
 
           <Fade in timeout={1600}>
             <Typography
@@ -88,7 +89,6 @@ const HeroSection = () => {
               elegant guesthouse accommodations
             </Typography>
           </Fade>
-
           <Zoom in timeout={2000}>
             <Stack
               direction={{ xs: "column", sm: "row" }}
