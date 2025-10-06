@@ -84,9 +84,9 @@ import {
                           Address
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          123 Hotel Street, International District
+                          Hotel Orange international Opp.Railway Station,
                           <br />
-                          City Center, Country 12345
+                          Railway Station main road,Surat.
                         </Typography>
                       </Box>
                     </Box>
@@ -119,9 +119,7 @@ import {
                           Phone
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          +1 (555) 123-4567
-                          <br />
-                          +1 (555) 123-4568
+                           02612412001
                         </Typography>
                       </Box>
                     </Box>

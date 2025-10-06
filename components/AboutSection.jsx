@@ -179,7 +179,7 @@ import {
                     color="text.secondary"
                     sx={{ lineHeight: 1.8 }}
                   >
-                    Experience culinary excellence with our internationally
+                    Experience culinary excellence with our 
                     trained chefs who craft memorable dishes using the finest
                     local and imported ingredients.
                   </Typography>

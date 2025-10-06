@@ -183,7 +183,7 @@ const Footer = () => {
             </Typography>
             <Box sx={{ display: "flex", gap: 1 }}>
               <IconButton
-                href="https://facebook.com"
+                href="https://www.facebook.com/hotelorangesurat"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -199,7 +199,7 @@ const Footer = () => {
                 <Facebook />
               </IconButton>
               <IconButton
-                href="https://instagram.com"
+                href="https://www.instagram.com/hotel_orange_international/"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -215,7 +215,7 @@ const Footer = () => {
                 <Instagram />
               </IconButton>
               <IconButton
-                href="https://twitter.com"
+                href="https://x.com/hotelorange2016"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{

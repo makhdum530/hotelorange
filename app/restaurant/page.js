@@ -8,8 +8,8 @@ import {
   Chip,
   Divider
 } from "@mui/material"
-import { Clock, Star, Utensils, Wine } from "lucide-react"
-const restaurantImage = '/restaurant-interior.jpg';
+import { Clock, Star, Utensils, UtensilsIcon, Wine } from "lucide-react"
+const restaurantImage = '/restaurant_bc.jpg';
 
 const Restaurant = () => {
   const menuItems = [
@@ -19,17 +19,17 @@ const Restaurant = () => {
         {
           name: "Truffle Arancini",
           description: "Crispy risotto balls with truffle oil",
-          price: "$18"
+          price: "₹18"
         },
         {
           name: "Seared Scallops",
           description: "Pan-seared with cauliflower puree",
-          price: "$24"
+          price: "₹24"
         },
         {
           name: "Burrata Caprese",
           description: "Fresh burrata with heirloom tomatoes",
-          price: "$16"
+          price: "₹16"
         }
       ]
     },
@@ -39,17 +39,17 @@ const Restaurant = () => {
         {
           name: "Wagyu Beef Tenderloin",
           description: "Grass-fed with seasonal vegetables",
-          price: "$65"
+          price: "₹65"
         },
         {
           name: "Pan-Seared Salmon",
           description: "Atlantic salmon with lemon herb butter",
-          price: "$38"
+          price: "₹38"
         },
         {
           name: "Lobster Risotto",
           description: "Creamy arborio rice with fresh lobster",
-          price: "$45"
+          price: "₹45"
         }
       ]
     },
@@ -59,25 +59,24 @@ const Restaurant = () => {
         {
           name: "Chocolate Soufflé",
           description: "Dark chocolate with vanilla ice cream",
-          price: "$14"
+          price: "₹14"
         },
         {
           name: "Tiramisu",
           description: "Classic Italian dessert",
-          price: "$12"
+          price: "₹12"
         },
         {
           name: "Crème Brûlée",
           description: "Vanilla custard with caramelized sugar",
-          price: "$13"
+          price: "₹13"
         }
       ]
     }
   ]
 
   return (
-    <Box sx={{ minHeight: "100vh", bgcolor: "background.default", pt: 10 }}>
-      {/* Hero Section */}
+    <Box sx={{ minHeight: "100vh", bgcolor: "background.default", pt: 0 }}>
       <Box
         sx={{
           position: "relative",
@@ -191,9 +190,9 @@ const Restaurant = () => {
                     Best in Surat
                   </Typography>
                   <Box sx={{ color: "text.secondary" }}>
-                    <Typography variant="body2">Fresh Food Daily</Typography>
+                    <Typography variant="body2">Prime Location</Typography>
                     <Typography variant="body2">
-                      Best Restaurant 2024
+                      Best Restaurant 2025
                     </Typography>
                     <Typography variant="body2">
                       Excellence in Service
@@ -214,7 +213,7 @@ const Restaurant = () => {
                 }}
               >
                 <CardContent sx={{ p: 4 }}>
-                  <Wine
+                  <UtensilsIcon
                     style={{
                       width: 48,
                       height: 48,
@@ -223,13 +222,13 @@ const Restaurant = () => {
                     }}
                   />
                   <Typography variant="h6" fontWeight="600" gutterBottom>
-                    Wine Selection
+                  Fresh Food Daily
                   </Typography>
                   <Box sx={{ color: "text.secondary" }}>
-                    <Typography variant="body2">200+ Premium Wines</Typography>
-                    <Typography variant="body2">Sommelier Curated</Typography>
+                    <Typography variant="body2">Fix Lunch & Pack Lunch</Typography>
+                    <Typography variant="body2">Large Dining Hall</Typography>
                     <Typography variant="body2">
-                      Wine Pairing Available
+                    Multicuisine Restaurant
                     </Typography>
                   </Box>
                 </CardContent>

@@ -85,7 +85,7 @@ const About = () => {
                     fontWeight="bold"
                     color="primary.main"
                   >
-                    Since 1995
+                    Since 2017
                   </Typography>
                 </Box>
 
@@ -95,18 +95,17 @@ const About = () => {
                   sx={{ mb: 3, lineHeight: 1.8 }}
                 >
                   Hotel Orange International has been a beacon of hospitality
-                  for over 25 years. What started as a small family business has
-                  grown into one of the most trusted names in luxury
-                  accommodation and fine dining.
+                  for over 9 years.
                 </Typography>
                 <Typography
                   variant="body1"
                   color="text.secondary"
                   sx={{ lineHeight: 1.8 }}
                 >
-                  Our commitment to excellence, attention to detail, and genuine
+                  {/* Our commitment to excellence, attention to detail, and genuine
                   care for our guests has earned us recognition both locally and
-                  internationally.
+                  internationally. */}
+                  When visiting Surat, you'll feel right at home at The Hotel Orange International(Hotel In Surat), which offers quality accommodation and great service. Only 50 m away, this hotel can be easily accessed from the Surat Railway station and Bus Station . Hotel Orange International(Hotel In Surat) is an excellent place to stay and you will be left with some beautiful memories.The service here is great and the staff is friendly and efficient.Also In Ziyafat Restaurant(Hotel In Surat) you can find the best food for eat.The food is excellent. Well furnished 52 Rooms With Attach Bath.TV with cable Channel Round the Clock. Direct dialing STD & ISD call. Round the Clock Room Services. 24 hours Running Hot and Cold Water.Same day Laundry Services.Car on rent, Doctor on call.Special Security Devices & Fire Safety.
                 </Typography>
               </Box>
             </Slide>
@@ -179,7 +178,7 @@ const About = () => {
                         color="primary.main"
                         sx={{ mb: 1 }}
                       >
-                        500+
+                        100+
                       </Typography>
                       <Typography
                         variant="body2"
@@ -212,7 +211,7 @@ const About = () => {
                         color="primary.main"
                         sx={{ mb: 1 }}
                       >
-                        25+
+                        9+
                       </Typography>
                       <Typography
                         variant="body2"

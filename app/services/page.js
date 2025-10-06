@@ -148,7 +148,7 @@ const Services = () => {
   ]
 
   const specialFeatures = [
-    "5-Star Hotel Standard Services",
+    "Hotel Standard Services",
     "Fitness Center Facilities",
     "Meeting Room Facilities",
     "Opposite Railway Station Location",
@@ -169,8 +169,7 @@ const Services = () => {
             color="text.secondary"
             sx={{ maxWidth: 900, mx: "auto" }}
           >
-            All the services and amenities you have come to expect from a 5-Star
-            Hotel are right in the comfort of your own accommodation
+           Experience the perfect blend of luxury and comfort in our rooms, thoughtfully designed to offer you all the amenities and sophistication you deserve — right within your private space.
           </Typography>
         </Box>
 
@@ -331,7 +330,7 @@ const Services = () => {
                 <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                   <Chip label="Best Restaurant in Surat" variant="outlined" />
                   <Chip label="Fresh Food Daily" variant="outlined" />
-                  <Chip label="24/7 Service Available" variant="outlined" />
+                  {/* <Chip label="24/7 Service Available" variant="outlined" /> */}
                 </Box>
               </CardContent>
             </Box>

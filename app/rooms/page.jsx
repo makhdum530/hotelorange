@@ -23,8 +23,7 @@ const Rooms = () => {
     {
       name: "Executive Single",
       price: "₹3,500",
-      image:
-        "https://hotelorangeinternational.com/room_image/EXECUTIVE_SINGLE.jpg",
+      image:"/EXECUTIVE_SINGLE.jpg",
       capacity: "1 Guest",
       amenities: [
         "Free WiFi",
@@ -36,7 +35,7 @@ const Rooms = () => {
     {
       name: "Executive Double",
       price: "₹4,300",
-      image: "https://hotelorangeinternational.com/room_image/ED.jpg",
+      image: "/ED.jpg",
       capacity: "2 Guests",
       amenities: [
         "Free WiFi",
@@ -46,10 +45,24 @@ const Rooms = () => {
       ]
     },
     {
+      name: "Superior Single",
+      price: "₹4,000",
+      image:
+        "/SUPERIOR_SINGLE.jpg",
+      capacity: "2 Guests",
+      amenities: [
+        "Free WiFi",
+        "LED TV",
+        "Tea/Coffee Maker",
+        "24hrs Room Service",
+        "Hair Dryer"
+      ]
+    },
+    {
       name: "Superior Double",
       price: "₹4,800",
       image:
-        "https://hotelorangeinternational.com/room_image/SUPERIOR_DOUBLE.jpg",
+        "/SUPERIOR_DOUBLE.jpg",
       capacity: "2 Guests",
       amenities: [
         "Free WiFi",
@@ -62,7 +75,7 @@ const Rooms = () => {
     {
       name: "Superior Triple",
       price: "₹5,600",
-      image: "https://hotelorangeinternational.com/room_image/TRIPLE_BED.jpg",
+      image: "/TRIPLE_BED.jpg",
       capacity: "3 Guests",
       amenities: [
         "Free WiFi",
