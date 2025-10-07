@@ -1,10 +1,7 @@
 "use client"
-import { useState } from "react"
-import { Box, Container, Typography, Chip, Dialog, Stack } from "@mui/material"
+import { Box, Chip, Container, Dialog, Stack, Typography } from "@mui/material";
+import { useState } from "react";
 
-const hotelHero = '/hotel-hero.jpg';
-const restaurantImage = '/restaurant-interior.jpg';
-const guesthouseImage = '/guesthouse-room.jpg';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all")
@@ -13,53 +10,143 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: hotelHero,
+      image: "/gallery/front_view.JPG",
       title: "Hotel Exterior",
       category: "hotel",
       description: "Beautiful exterior view of Hotel Orange International"
     },
     {
       id: 2,
-      image: restaurantImage,
+      image: '/gallery/11.jpg',
       title: "Restaurant Interior",
       category: "restaurant",
       description: "Elegant dining atmosphere with modern design"
     },
     {
       id: 3,
-      image: guesthouseImage,
+      image: "/gallery/14.jpg",
+      title: "Luxury Suite",
+      category: "parking",
+      description: "Spacious and comfortable accommodation"
+    },
+    {
+      id: 4,
+      image: "/gallery/15.jpg",
+      title: "Garden View",
+      category: "parking",
+      description: "Peaceful garden area for relaxation"
+    },
+    
+    {
+      id: 5,
+      image: "/gallery/A1.jpg",
+      title: "Fine Dining",
+      category: "hotel",
+      description: "Exquisite culinary presentation"
+    },
+    {
+      id: 6,
+      image: "/gallery/banq1.jpg",
+      title: "Comfort Room",
+      category: "banquet",
+      description: "Cozy and well-appointed guest room"
+    },
+    {
+      id: 7,
+      image: "/gallery/banq2.jpg",
+      title: "Hotel Exterior",
+      category: "banquet",
+      description: "Beautiful exterior view of Hotel Orange International"
+    },
+    {
+      id: 8,
+      image: '/gallery/buffet_breakfast_1.jpg',
+      title: "Restaurant Interior",
+      category: "restaurant",
+      description: "Elegant dining atmosphere with modern design"
+    },
+    {
+      id: 9,
+      image: "/gallery/g3.jpg",
       title: "Luxury Suite",
       category: "rooms",
       description: "Spacious and comfortable accommodation"
     },
     {
-      id: 4,
-      image: hotelHero,
+      id: 10,
+      image: "/gallery/g4.jpg",
+      title: "Garden View",
+      category: "rooms",
+      description: "Peaceful garden area for relaxation"
+    },
+    
+    {
+      id: 11,
+      image: "/gallery/g6.jpg",
+      title: "Fine Dining",
+      category: "rooms",
+      description: "Exquisite culinary presentation"
+    },
+    {
+      id: 12,
+      image: "/gallery/g7.jpg",
+      title: "Comfort Room",
+      category: "rooms",
+      description: "Cozy and well-appointed guest room"
+    },
+    {
+      id: 13,
+      image: "/gallery/g12.jpg",
+      title: "Hotel Exterior",
+      category: "hotel",
+      description: "Beautiful exterior view of Hotel Orange International"
+    },
+    {
+      id: 14,
+      image: '/gallery/Garden_01.jpg',
+      title: "Restaurant Interior",
+      category: "hotel",
+      description: "Elegant dining atmosphere with modern design"
+    },
+    {
+      id: 15,
+      image: "/gallery/hotel1.jpeg",
+      title: "Luxury Suite",
+      category: "hotel",
+      description: "Spacious and comfortable accommodation"
+    },
+    {
+      id: 16,
+      image: "/gallery/m1.jpg",
       title: "Garden View",
       category: "hotel",
       description: "Peaceful garden area for relaxation"
     },
+    
     {
-      id: 5,
-      image: restaurantImage,
+      id: 17,
+      image: "/gallery/restaurant_bc.jpeg",
       title: "Fine Dining",
       category: "restaurant",
       description: "Exquisite culinary presentation"
     },
     {
-      id: 6,
-      image: guesthouseImage,
+      id: 18,
+      image: "/gallery/restaurant1.jpg",
       title: "Comfort Room",
-      category: "rooms",
+      category: "restaurant",
       description: "Cozy and well-appointed guest room"
-    }
+    },
   ]
 
   const categories = [
     { id: "all", label: "All" },
     { id: "hotel", label: "Hotel" },
     { id: "restaurant", label: "Restaurant" },
-    { id: "rooms", label: "Rooms" }
+    { id: "rooms", label: "Rooms" },
+    { id: "parking", label: "Parking" },
+    { id: "banquet", label: "Banquet" }
+
   ]
 
   const filteredItems =
