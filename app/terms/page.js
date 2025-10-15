@@ -44,14 +44,14 @@ const Terms = () => {
       items: [
         "Complimentary breakfast only served in Ziyafat Restaurant",
         "Complimentary breakfast ordered in room will be charged",
-        "Buffet breakfast timing: 07:30 AM to 10:00 AM"
+        "Buffet breakfast timing: 08:00 AM to 10:30 AM"
       ]
     },
     {
       title: "Guest Conduct",
       icon: AlertTriangle,
       items: [
-        "Unmarried couples are not allowed to share rooms",
+        "Unmarried couples are not allowed to share rooms(As per Management Policy)",
         "Drinking alcohol is strictly prohibited in rooms and hotel premises",
         "Guests are responsible for any damage to hotel property"
       ]
@@ -63,7 +63,9 @@ const Terms = () => {
         "All rights reserved with the management of Hotel Orange International",
         "Subject to Surat jurisdiction",
         "Management reserves the right to refuse service",
-        "Hotel is not responsible for loss of personal belongings"
+        "Hotel is not responsible for loss of personal belongings",
+        "Visitors Not Allowed In Room More Than 15 Minutes.",
+        "No Visitor Allowed In The Room From 9 P.M. To 9 A.M."
       ]
     }
   ]
@@ -195,7 +197,7 @@ const Terms = () => {
         </Card>
 
         {/* Contact Information */}
-        <Card sx={{ mb: 6 }}>
+        {/* <Card sx={{ mb: 6 }}>
           <CardContent>
             <Box
               sx={{
@@ -240,7 +242,7 @@ const Terms = () => {
               ))}
             </Box>
           </CardContent>
-        </Card>
+        </Card> */}
 
         {/* Address */}
         <Card
@@ -270,7 +272,7 @@ const Terms = () => {
         {/* Disclaimer */}
         <Box sx={{ mt: 6, textAlign: "center", color: "text.secondary" }}>
           <Typography variant="body2">
-            © 2024 Hotel Orange International. All rights reserved.
+            © 2025 Hotel Orange International. All rights reserved.
           </Typography>
           <Typography variant="body2" sx={{ mt: 1 }}>
             These terms and conditions are subject to change without prior

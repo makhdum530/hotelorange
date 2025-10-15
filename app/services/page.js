@@ -61,7 +61,7 @@ const Services = () => {
         {
           icon: Utensils,
           name: "Buffet Breakfast",
-          description: "07:30 AM to 10:00 AM daily"
+          description: "08:00 AM to 10:30 AM daily"
         },
         {
           icon: Droplets,
@@ -103,11 +103,11 @@ const Services = () => {
           name: "All Major Cards Accepted",
           description: "Convenient payment options"
         },
-        {
-          icon: Shield,
-          name: "Safe Deposit Lockers",
-          description: "Secure storage for valuables"
-        },
+        // {
+        //   icon: Shield,
+        //   name: "Safe Deposit Lockers",
+        //   description: "Secure storage for valuables"
+        // },
         {
           icon: Newspaper,
           name: "Daily Newspaper",

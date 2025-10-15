@@ -252,7 +252,7 @@ const ContactSection = () => {
                       mt: 3,
                     }}
                   >
-                    <Button
+                    {/* <Button
                       variant="contained"
                       size="large"
                       fullWidth
@@ -267,7 +267,7 @@ const ContactSection = () => {
                       sx={{ py: 2, fontSize: "1.1rem", boxShadow: 2 }}
                     >
                       Restaurant Booking
-                    </Button>
+                    </Button> */}
                     <Button
                       variant="outlined"
                       size="large"

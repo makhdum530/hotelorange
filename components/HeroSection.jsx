@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 
 // const heroImage = '/hotel-hero.jpg';
-const heroImage = '/slider2.jpg';
+const heroImage = '/front_resception.jpeg';
 
 const HeroSection = () => {
   return (

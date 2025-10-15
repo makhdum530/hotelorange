@@ -113,9 +113,9 @@ const Restaurant = () => {
               The food is excellent and we serve the finest cuisine with
               exceptional service.
             </Typography>
-            <Button variant="contained" size="large" sx={{ px: 4, py: 1.5 }}>
+            {/* <Button variant="contained" size="large" sx={{ px: 4, py: 1.5 }}>
               Reserve a Table
-            </Button>
+            </Button> */}
           </Box>
         </Container>
       </Box>
@@ -154,13 +154,13 @@ const Restaurant = () => {
                   </Typography>
                   <Box sx={{ color: "text.secondary" }}>
                     <Typography variant="body2">
-                      Breakfast: 7:30 AM - 10:00 AM
+                      Breakfast Time: 08:00 AM - 10:30 AM
                     </Typography>
                     <Typography variant="body2">
-                      Lunch: 12:00 PM - 4:00 PM
+                    Restaurant Time: 08:00 AM - 10:30 PM
                     </Typography>
                     <Typography variant="body2">
-                      Dinner: 7:00 PM - 11:00 PM
+                    Meal Time: 11:00 AM - 10:30 PM
                     </Typography>
                   </Box>
                 </CardContent>
@@ -316,9 +316,9 @@ const Restaurant = () => {
           <Button variant="outlined" size="large" sx={{ mr: 2 }}>
             Download Full Menu
           </Button>
-          <Button variant="contained" size="large">
+          {/* <Button variant="contained" size="large">
             Make Reservation
-          </Button>
+          </Button> */}
         </Box>
       </Container>
     </Box>

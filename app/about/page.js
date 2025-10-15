@@ -85,7 +85,7 @@ const About = () => {
                     fontWeight="bold"
                     color="primary.main"
                   >
-                    Since 2017
+                    Since 2016
                   </Typography>
                 </Box>
 

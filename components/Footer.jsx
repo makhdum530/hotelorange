@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   Box,
   Container,
@@ -6,8 +6,8 @@ import {
   Link as MuiLink,
   IconButton,
   Divider,
-  Stack
-} from "@mui/material"
+  Stack,
+} from "@mui/material";
 import {
   Facebook,
   Instagram,
@@ -15,10 +15,10 @@ import {
   Email,
   Phone,
   LocationOn,
-  CreditCard
-} from "@mui/icons-material"
+  CreditCard,
+} from "@mui/icons-material";
 import Link from "next/link";
-const logo = '/logo.png';
+const logo = "/logo.png";
 
 const Footer = () => {
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
         borderTop: 1,
         borderColor: "primary.main",
         borderOpacity: 0.2,
-        py: 6
+        py: 6,
       }}
     >
       <Container maxWidth="lg">
@@ -40,9 +40,9 @@ const Footer = () => {
             gridTemplateColumns: {
               xs: "1fr",
               md: "1fr 1fr",
-              lg: "1fr 1fr 1fr 1fr"
+              lg: "1fr 1fr 1fr",
             },
-            gap: 4
+            gap: 4,
           }}
         >
           {/* About Section */}
@@ -69,112 +69,6 @@ const Footer = () => {
                 All major cards accepted
               </Typography>
             </Box>
-          </Box>
-
-          {/* Quick Links */}
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            <Typography variant="h6" color="primary" fontWeight="bold">
-              Quick Links
-            </Typography>
-            <Stack spacing={1}>
-              <MuiLink
-                component={Link}
-                href="/rooms"
-                variant="body2"
-                color="text.secondary"
-                sx={{
-                  textDecoration: "none",
-                  "&:hover": { color: "primary.main" }
-                }}
-              >
-                Rooms & Suites
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="/restaurant"
-                variant="body2"
-                color="text.secondary"
-                sx={{
-                  textDecoration: "none",
-                  "&:hover": { color: "primary.main" }
-                }}
-              >
-                Ziyafat Restaurant
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="/services"
-                variant="body2"
-                color="text.secondary"
-                sx={{
-                  textDecoration: "none",
-                  "&:hover": { color: "primary.main" }
-                }}
-              >
-                Facilities & Services
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="/gallery"
-                variant="body2"
-                color="text.secondary"
-                sx={{
-                  textDecoration: "none",
-                  "&:hover": { color: "primary.main" }
-                }}
-              >
-                Gallery
-              </MuiLink>
-              <MuiLink
-                component={Link}
-                href="/terms"
-                variant="body2"
-                color="text.secondary"
-                sx={{
-                  textDecoration: "none",
-                  "&:hover": { color: "primary.main" }
-                }}
-              >
-                Terms & Conditions
-              </MuiLink>
-            </Stack>
-          </Box>
-
-          {/* Contact Info */}
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            <Typography variant="h6" color="primary" fontWeight="bold">
-              Contact Us
-            </Typography>
-            <Stack spacing={2}>
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
-                <LocationOn color="primary" fontSize="small" sx={{ mt: 0.5 }} />
-                <Typography variant="body2" color="text.secondary">
-                  Near Railway Station, Opposite Jayshree Garden, Surat -
-                  395003, Gujarat
-                </Typography>
-              </Box>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Phone color="primary" fontSize="small" />
-                <Box>
-                  <Typography variant="body2" color="text.secondary">
-                    +91-261-2407173
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    +91-9825111173
-                  </Typography>
-                </Box>
-              </Box>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Email color="primary" fontSize="small" />
-                <Typography variant="body2" color="text.secondary">
-                  info@hotelorangeinternational.com
-                </Typography>
-              </Box>
-            </Stack>
-          </Box>
-
-          {/* Social Links */}
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <Typography variant="h6" color="primary" fontWeight="bold">
               Follow Us
             </Typography>
@@ -191,9 +85,9 @@ const Footer = () => {
                   color: "white",
                   "&:hover": {
                     backgroundColor: "primary.main",
-                    transform: "scale(1.1)"
+                    transform: "scale(1.1)",
                   },
-                  transition: "all 0.3s ease"
+                  transition: "all 0.3s ease",
                 }}
               >
                 <Facebook />
@@ -207,9 +101,9 @@ const Footer = () => {
                   color: "white",
                   "&:hover": {
                     backgroundColor: "primary.main",
-                    transform: "scale(1.1)"
+                    transform: "scale(1.1)",
                   },
-                  transition: "all 0.3s ease"
+                  transition: "all 0.3s ease",
                 }}
               >
                 <Instagram />
@@ -223,15 +117,198 @@ const Footer = () => {
                   color: "white",
                   "&:hover": {
                     backgroundColor: "primary.main",
-                    transform: "scale(1.1)"
+                    transform: "scale(1.1)",
                   },
-                  transition: "all 0.3s ease"
+                  transition: "all 0.3s ease",
                 }}
               >
                 <Twitter />
               </IconButton>
             </Box>
           </Box>
+
+          {/* Contact Info */}
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <Typography variant="h6" color="primary" fontWeight="bold">
+              Contact Us
+            </Typography>
+            <Stack spacing={2}>
+              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
+                <LocationOn color="primary" fontSize="small" sx={{ mt: 0.5 }} />
+                <Typography variant="body2" color="text.secondary">
+                  Hotel Orange International Railway Station Main Road,Near
+                  Mohan Mithai,Opp. 21st Century Hospital,Surat - 395003
+                </Typography>
+              </Box>
+              <Typography variant="body2" color="text.secondary">
+                Rooms
+              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Phone color="primary" fontSize="small" />
+                <Box>
+                  <Typography variant="body2" color="text.secondary">
+                    +91 9512132001
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    +91 261 2412001
+                  </Typography>
+                </Box>
+              </Box>
+              <Typography variant="body2" color="text.secondary">
+                For Restaurant
+              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Phone color="primary" fontSize="small" />
+                <Box>
+                  <Typography variant="body2" color="text.secondary">
+                    +91 9978382001
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    +91 261 2412002
+                  </Typography>
+                </Box>
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Email color="primary" fontSize="small" />
+                <Typography variant="body2" color="text.secondary">
+                  info@hotelorangeinternational.com
+                </Typography>
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Email color="primary" fontSize="small" />
+                <Typography variant="body2" color="text.secondary">
+                  hotelorangeinternational@gmail.com
+                </Typography>
+              </Box>
+            </Stack>
+          </Box>
+          {/* Quick Links */}
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <Typography variant="h6" color="primary" fontWeight="bold">
+              Quick Links
+            </Typography>
+            <Stack spacing={1}>
+              <MuiLink
+                component={Link}
+                href="/rooms"
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  textDecoration: "none",
+                  "&:hover": { color: "primary.main" },
+                }}
+              >
+                Rooms & Suites
+              </MuiLink>
+              <MuiLink
+                component={Link}
+                href="/restaurant"
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  textDecoration: "none",
+                  "&:hover": { color: "primary.main" },
+                }}
+              >
+                Ziyafat Restaurant
+              </MuiLink>
+              <MuiLink
+                component={Link}
+                href="/services"
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  textDecoration: "none",
+                  "&:hover": { color: "primary.main" },
+                }}
+              >
+                Facilities & Services
+              </MuiLink>
+              <MuiLink
+                component={Link}
+                href="/gallery"
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  textDecoration: "none",
+                  "&:hover": { color: "primary.main" },
+                }}
+              >
+                Gallery
+              </MuiLink>
+              <MuiLink
+                component={Link}
+                href="/terms"
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  textDecoration: "none",
+                  "&:hover": { color: "primary.main" },
+                }}
+              >
+                Terms & Conditions
+              </MuiLink>
+            </Stack>
+          </Box>
+          {/* Social Links */}
+          {/* <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <Typography variant="h6" color="primary" fontWeight="bold">
+              Follow Us
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Stay connected with us on social media
+            </Typography>
+            <Box sx={{ display: "flex", gap: 1 }}>
+              <IconButton
+                href="https://www.facebook.com/hotelorangesurat"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  backgroundColor: "primary.light",
+                  color: "white",
+                  "&:hover": {
+                    backgroundColor: "primary.main",
+                    transform: "scale(1.1)",
+                  },
+                  transition: "all 0.3s ease",
+                }}
+              >
+                <Facebook />
+              </IconButton>
+              <IconButton
+                href="https://www.instagram.com/hotel_orange_international/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  backgroundColor: "primary.light",
+                  color: "white",
+                  "&:hover": {
+                    backgroundColor: "primary.main",
+                    transform: "scale(1.1)",
+                  },
+                  transition: "all 0.3s ease",
+                }}
+              >
+                <Instagram />
+              </IconButton>
+              <IconButton
+                href="https://x.com/hotelorange2016"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  backgroundColor: "primary.light",
+                  color: "white",
+                  "&:hover": {
+                    backgroundColor: "primary.main",
+                    transform: "scale(1.1)",
+                  },
+                  transition: "all 0.3s ease",
+                }}
+              >
+                <Twitter />
+              </IconButton>
+            </Box>
+          </Box> */}
         </Box>
 
         {/* Bottom Bar */}
@@ -242,7 +319,7 @@ const Footer = () => {
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: "center",
-            gap: 2
+            gap: 2,
           }}
         >
           <Typography variant="body2" color="text.secondary" textAlign="center">
@@ -255,7 +332,7 @@ const Footer = () => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

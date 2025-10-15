@@ -71,11 +71,11 @@ const Contact = () => {
                         Address
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        Hotel Orange International
+                      Hotel Orange International Railway Station Main Road,
                         <br />
-                        Opposite Railway Station
+                        Near Mohan Mithai,Opp. 21st Century Hospital,
                         <br />
-                        Railway Station Main Road, Surat
+                        Surat - 395003
                       </Typography>
                     </Box>
                   </Box>
@@ -106,11 +106,16 @@ const Contact = () => {
                         Phone
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        Main: 0261-2412001
+                        Room: +91 9512132001
                         <br />
-                        Alternate: 0261-2412002
+                        Alternate: +91 261 2412001
                         <br />
-                        Mobile: +91 95121 32001
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                      Restaurant: +91 9978382001
+                        <br />
+                        Alternate: +91 261 2412002
+                        <br />
                       </Typography>
                     </Box>
                   </Box>
@@ -182,7 +187,7 @@ const Contact = () => {
                         <br />
                         Check-out: 11:00 AM
                         <br />
-                        Ziyafat Restaurant: 7:30 AM - 11:00 PM
+                        Ziyafat Restaurant: 08:00 AM - 10:30 PM
                       </Typography>
                     </Box>
                   </Box>

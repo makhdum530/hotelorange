@@ -339,7 +339,7 @@ const Rooms = () => {
                   }
                 }}
               >
-                Call: 0261-2412001
+                Call: +91 261 2412001
               </Button>
               <Button
                 variant="outlined"
