@@ -21,10 +21,10 @@ import { Phone, Users, Wifi, Coffee, Car, Utensils } from "lucide-react"
 const Rooms = () => {
   const roomTypes = [
     {
-      name: "Executive Single",
+      name: "Executive King",
       price: "₹3,500",
       image:"/EXECUTIVE_SINGLE.jpg",
-      capacity: "1 Guest",
+      capacity: "2 Guests -₹4,300",
       amenities: [
         "Free WiFi",
         "LED TV",
@@ -33,10 +33,10 @@ const Rooms = () => {
       ]
     },
     {
-      name: "Executive Double",
-      price: "₹4,300",
+      name: "Executive Twin",
+      price: "₹3,500",
       image: "/ED.jpg",
-      capacity: "2 Guests",
+      capacity: "2 Guests -₹4,300",
       amenities: [
         "Free WiFi",
         "LED TV",
@@ -45,11 +45,11 @@ const Rooms = () => {
       ]
     },
     {
-      name: "Superior Single",
+      name: "Superior King",
       price: "₹4,000",
       image:
         "/SUPERIOR_SINGLE.jpg",
-      capacity: "2 Guests",
+      capacity: "2 Guests -₹4,800",
       amenities: [
         "Free WiFi",
         "LED TV",
@@ -59,12 +59,12 @@ const Rooms = () => {
       ]
     },
     {
-      name: "Superior Double",
-      price: "₹4,800",
+      name: "Superior Twin",
+      price: "₹4,000",
       image:
         "/SUPERIOR_DOUBLE.jpg",
-      capacity: "2 Guests",
-      amenities: [
+        capacity: "2 Guests -₹4,800",
+        amenities: [
         "Free WiFi",
         "LED TV",
         "Tea/Coffee Maker",
@@ -246,10 +246,10 @@ const Rooms = () => {
                       <Typography fontWeight="600">Room Type</Typography>
                     </TableCell>
                     <TableCell>
-                      <Typography fontWeight="600">Single</Typography>
+                      <Typography fontWeight="600">King</Typography>
                     </TableCell>
                     <TableCell>
-                      <Typography fontWeight="600">Double</Typography>
+                      <Typography fontWeight="600">Twin</Typography>
                     </TableCell>
                     <TableCell>
                       <Typography fontWeight="600">Triple</Typography>

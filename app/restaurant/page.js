@@ -14,42 +14,47 @@ const restaurantImage = '/restaurant_bc.jpg';
 const Restaurant = () => {
   const menuItems = [
     {
-      category: "Appetizers",
+      category: "Sizzler",
       items: [
         {
-          name: "Truffle Arancini",
-          description: "Crispy risotto balls with truffle oil",
-          price: "₹18"
+          name: "All in One Sizzler",
+          // description: "Crispy risotto balls with truffle oil",
+          // price: "₹18"
         },
         {
-          name: "Seared Scallops",
-          description: "Pan-seared with cauliflower puree",
-          price: "₹24"
+          name: "Ziyafat Special Sizzler",
+          // description: "Pan-seared with cauliflower puree",
+          // price: "₹24"
         },
         {
-          name: "Burrata Caprese",
-          description: "Fresh burrata with heirloom tomatoes",
-          price: "₹16"
+          name: "Paneer Shashlik Sizzler",
+          // description: "Fresh burrata with heirloom tomatoes",
+          // price: "₹16"
         }
       ]
     },
     {
-      category: "Main Courses",
+      category: "Starter",
       items: [
         {
-          name: "Wagyu Beef Tenderloin",
-          description: "Grass-fed with seasonal vegetables",
-          price: "₹65"
+          name: "Paneer Gulzari Kebab",
+          // description: "Grass-fed with seasonal vegetables",
+          // price: "₹65"
         },
         {
-          name: "Pan-Seared Salmon",
-          description: "Atlantic salmon with lemon herb butter",
-          price: "₹38"
+          name: "Dragoon Paneer",
+          // description: "Atlantic salmon with lemon herb butter",
+          // price: "₹38"
         },
         {
-          name: "Lobster Risotto",
-          description: "Creamy arborio rice with fresh lobster",
-          price: "₹45"
+          name: "Cheese Cigar Roll",
+          // description: "Creamy arborio rice with fresh lobster",
+          // price: "₹45"
+        },
+        {
+          name: "Hot Sizzling Paneer",
+          // description: "Creamy arborio rice with fresh lobster",
+          // price: "₹45"
         }
       ]
     },
@@ -57,19 +62,24 @@ const Restaurant = () => {
       category: "Desserts",
       items: [
         {
-          name: "Chocolate Soufflé",
-          description: "Dark chocolate with vanilla ice cream",
-          price: "₹14"
+          name: "Angoori Rabdi",
+          // description: "Dark chocolate with vanilla ice cream",
+          // price: "₹14"
         },
         {
-          name: "Tiramisu",
-          description: "Classic Italian dessert",
-          price: "₹12"
+          name: "Falooda & Lassi",
+          // description: "Classic Italian dessert",
+          // price: "₹12"
         },
         {
-          name: "Crème Brûlée",
-          description: "Vanilla custard with caramelized sugar",
-          price: "₹13"
+          name: "Mocktail & Mojito",
+          // description: "Vanilla custard with caramelized sugar",
+          // price: "₹13"
+        },
+        {
+          name: "Sizzling Brownie",
+          // description: "Vanilla custard with caramelized sugar",
+          // price: "₹13"
         }
       ]
     }
@@ -290,18 +300,18 @@ const Restaurant = () => {
                           >
                             {item.name}
                           </Typography>
-                          <Typography variant="body2" color="text.secondary">
+                          {/* <Typography variant="body2" color="text.secondary">
                             {item.description}
-                          </Typography>
+                          </Typography> */}
                         </Box>
-                        <Typography
+                        {/* <Typography
                           variant="h5"
                           fontWeight="bold"
                           color="primary.main"
                           sx={{ ml: 2 }}
                         >
                           {item.price}
-                        </Typography>
+                        </Typography> */}
                       </Box>
                     </CardContent>
                   </Card>

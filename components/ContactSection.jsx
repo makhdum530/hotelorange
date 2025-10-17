@@ -41,201 +41,7 @@ const ContactSection = () => {
             gap: 6,
           }}
         >
-          {/* <Box>
-              <Card sx={{ boxShadow: 3 }}>
-                <CardContent sx={{ p: 4 }}>
-                  <Typography variant="h5" fontWeight="bold" gutterBottom>
-                    Get In Touch
-                  </Typography>
-  
-                  <Box
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: 3,
-                      mt: 3
-                    }}
-                  >
-                    <Box
-                      sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}
-                    >
-                      <Box
-                        sx={{
-                          width: 48,
-                          height: 48,
-                          bgcolor: "rgba(251, 146, 60, 0.1)",
-                          borderRadius: 1,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0
-                        }}
-                      >
-                        <MapPin
-                          style={{ width: 24, height: 24, color: "#fb923c" }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle1"
-                          fontWeight="600"
-                          gutterBottom
-                        >
-                          Address
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          Hotel Orange international Opp.Railway Station,
-                          <br />
-                          Railway Station main road,Surat.
-                        </Typography>
-                      </Box>
-                    </Box>
-  
-                    <Box
-                      sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}
-                    >
-                      <Box
-                        sx={{
-                          width: 48,
-                          height: 48,
-                          bgcolor: "rgba(251, 146, 60, 0.1)",
-                          borderRadius: 1,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0
-                        }}
-                      >
-                        <Phone
-                          style={{ width: 24, height: 24, color: "#fb923c" }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle1"
-                          fontWeight="600"
-                          gutterBottom
-                        >
-                          Phone
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                           02612412001
-                        </Typography>
-                      </Box>
-                    </Box>
-  
-                    <Box
-                      sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}
-                    >
-                      <Box
-                        sx={{
-                          width: 48,
-                          height: 48,
-                          bgcolor: "rgba(251, 146, 60, 0.1)",
-                          borderRadius: 1,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0
-                        }}
-                      >
-                        <Mail
-                          style={{ width: 24, height: 24, color: "#fb923c" }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle1"
-                          fontWeight="600"
-                          gutterBottom
-                        >
-                          Email
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          info@hotelorangeinternational.com
-                          <br />
-                          reservations@hotelorangeinternational.com
-                        </Typography>
-                      </Box>
-                    </Box>
-  
-                    <Box
-                      sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}
-                    >
-                      <Box
-                        sx={{
-                          width: 48,
-                          height: 48,
-                          bgcolor: "rgba(251, 146, 60, 0.1)",
-                          borderRadius: 1,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0
-                        }}
-                      >
-                        <Globe
-                          style={{ width: 24, height: 24, color: "#fb923c" }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle1"
-                          fontWeight="600"
-                          gutterBottom
-                        >
-                          Website
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          www.hotelorangeinternational.com
-                        </Typography>
-                      </Box>
-                    </Box>
-  
-                    <Box
-                      sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}
-                    >
-                      <Box
-                        sx={{
-                          width: 48,
-                          height: 48,
-                          bgcolor: "rgba(251, 146, 60, 0.1)",
-                          borderRadius: 1,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0
-                        }}
-                      >
-                        <Clock
-                          style={{ width: 24, height: 24, color: "#fb923c" }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle1"
-                          fontWeight="600"
-                          gutterBottom
-                        >
-                          Operating Hours
-                        </Typography>
-                        <Box sx={{ color: "text.secondary" }}>
-                          <Typography variant="body2">
-                            <strong>Reception:</strong> 24/7
-                          </Typography>
-                          <Typography variant="body2">
-                            <strong>Restaurant:</strong> 6:00 AM - 11:00 PM
-                          </Typography>
-                          <Typography variant="body2">
-                            <strong>Room Service:</strong> 24/7
-                          </Typography>
-                        </Box>
-                      </Box>
-                    </Box>
-                  </Box>
-                </CardContent>
-              </Card>
-            </Box> */}
+         
           <Box>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <Card sx={{ boxShadow: 3 }}>
@@ -243,7 +49,6 @@ const ContactSection = () => {
                   <Typography variant="h5" fontWeight="bold" gutterBottom>
                     Quick Actions
                   </Typography>
-
                   <Box
                     sx={{
                       display: "flex",
@@ -252,15 +57,15 @@ const ContactSection = () => {
                       mt: 3,
                     }}
                   >
-                    {/* <Button
+                    <Button
                       variant="contained"
                       size="large"
                       fullWidth
-                      sx={{ py: 2, fontSize: "1.1rem", boxShadow: 2 }}
+                      sx={{ py: 1.5, fontSize: "1.1rem", boxShadow: 2 }}
                     >
                       Make a Reservation
                     </Button>
-                    <Button
+                    {/* <Button
                       variant="outlined"
                       size="large"
                       fullWidth
@@ -273,7 +78,7 @@ const ContactSection = () => {
                       size="large"
                       fullWidth
                       color="secondary"
-                      sx={{ py: 2, fontSize: "1.1rem", boxShadow: 2 }}
+                      sx={{ py: 1.5, fontSize: "1.1rem", boxShadow: 2 }}
                     >
                       Special Events Inquiry
                     </Button>
@@ -292,7 +97,7 @@ const ContactSection = () => {
                   boxShadow: 3,
                 }}
               >
-                <CardContent sx={{ p: 4 }}>
+                <CardContent sx={{ p: 5 }}>
                   <Typography variant="h5" fontWeight="bold" gutterBottom>
                     Special Offers
                   </Typography>
@@ -305,7 +110,7 @@ const ContactSection = () => {
                     size="large"
                     fullWidth
                     sx={{
-                      py: 1.5,
+                      py: 2,
                       bgcolor: "white",
                       color: "primary.main",
                       "&:hover": { bgcolor: "rgba(255,255,255,0.9)" },
