@@ -292,33 +292,36 @@ const Contact = () => {
             </Box>
           </Card>
         </Box> */}
-        {/* Map Section */}
-        <Box sx={{ mt: 8 }}>
-          <Typography
-            variant="h4"
-            fontWeight="bold"
-            textAlign="center"
-            gutterBottom
-          >
-            Find Us
-          </Typography>
+      
+      {/* Map Section */}
+<Box sx={{ mt: 8 }}>
+  <Typography
+    variant="h4"
+    fontWeight="bold"
+    textAlign="center"
+    gutterBottom
+  >
+    Find Us
+  </Typography>
 
-          <Card
-            sx={{ mt: 4, boxShadow: 4, overflow: "hidden", borderRadius: 3 }}
-          >
-            <Box
-              component="iframe"
-              src="https://www.google.com/maps?ll=21.204914,72.838615&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=15487321199586300992"
-              sx={{
-                border: 0,
-                width: "100%",
-                height: 384,
-              }}
-              allowFullScreen
-              loading="lazy"
-            />
-          </Card>
-        </Box>
+  {/* <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+
+  <Card sx={{ mt: 4, boxShadow: 4, overflow: "hidden", borderRadius: 3 }}>
+    <Box
+      component="iframe"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7439.357650132312!2d72.838615!3d21.204914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ef769f0375d%3A0xd6ee04935fb7d440!2sHotel%20Orange%20International!5e0!3m2!1sen!2sus!4v1760711959741!5m2!1sen!2sus"
+      sx={{
+        border: 0,
+        width: "100%",
+        height: 384,
+      }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </Card>
+</Box>
+
       </Container>
     </Box>
   );
