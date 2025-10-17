@@ -6,10 +6,10 @@ import {
   Card,
   CardContent,
   Chip,
-  Divider
-} from "@mui/material"
-import { Clock, Star, Utensils, UtensilsIcon, Wine } from "lucide-react"
-const restaurantImage = '/restaurant_bc.jpg';
+  Divider,
+} from "@mui/material";
+import { Clock, Star, Utensils, UtensilsIcon, Wine } from "lucide-react";
+const restaurantImage = "/restaurant_bc.jpg";
 
 const Restaurant = () => {
   const menuItems = [
@@ -30,8 +30,8 @@ const Restaurant = () => {
           name: "Paneer Shashlik Sizzler",
           // description: "Fresh burrata with heirloom tomatoes",
           // price: "₹16"
-        }
-      ]
+        },
+      ],
     },
     {
       category: "Starter",
@@ -55,8 +55,8 @@ const Restaurant = () => {
           name: "Hot Sizzling Paneer",
           // description: "Creamy arborio rice with fresh lobster",
           // price: "₹45"
-        }
-      ]
+        },
+      ],
     },
     {
       category: "Desserts",
@@ -80,10 +80,10 @@ const Restaurant = () => {
           name: "Sizzling Brownie",
           // description: "Vanilla custard with caramelized sugar",
           // price: "₹13"
-        }
-      ]
-    }
-  ]
+        },
+      ],
+    },
+  ];
 
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "background.default", pt: 0 }}>
@@ -96,7 +96,7 @@ const Restaurant = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
-          alignItems: "center"
+          alignItems: "center",
         }}
       >
         <Container maxWidth="lg">
@@ -137,7 +137,7 @@ const Restaurant = () => {
             sx={{
               display: "grid",
               gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" },
-              gap: 4
+              gap: 4,
             }}
           >
             <Box>
@@ -146,8 +146,8 @@ const Restaurant = () => {
                   textAlign: "center",
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent sx={{ p: 4 }}>
@@ -156,7 +156,7 @@ const Restaurant = () => {
                       width: 48,
                       height: 48,
                       color: "#fb923c",
-                      margin: "0 auto 16px"
+                      margin: "0 auto 16px",
                     }}
                   />
                   <Typography variant="h6" fontWeight="600" gutterBottom>
@@ -167,10 +167,10 @@ const Restaurant = () => {
                       Breakfast Time: 08:00 AM - 10:30 AM
                     </Typography>
                     <Typography variant="body2">
-                    Restaurant Time: 08:00 AM - 10:30 PM
+                      Restaurant Time: 08:00 AM - 10:30 PM
                     </Typography>
                     <Typography variant="body2">
-                    Meal Time: 11:00 AM - 10:30 PM
+                      Meal Time: 11:00 AM - 10:30 PM
                     </Typography>
                   </Box>
                 </CardContent>
@@ -183,8 +183,8 @@ const Restaurant = () => {
                   textAlign: "center",
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent sx={{ p: 4 }}>
@@ -193,7 +193,7 @@ const Restaurant = () => {
                       width: 48,
                       height: 48,
                       color: "#fb923c",
-                      margin: "0 auto 16px"
+                      margin: "0 auto 16px",
                     }}
                   />
                   <Typography variant="h6" fontWeight="600" gutterBottom>
@@ -218,8 +218,8 @@ const Restaurant = () => {
                   textAlign: "center",
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent sx={{ p: 4 }}>
@@ -228,17 +228,19 @@ const Restaurant = () => {
                       width: 48,
                       height: 48,
                       color: "#fb923c",
-                      margin: "0 auto 16px"
+                      margin: "0 auto 16px",
                     }}
                   />
                   <Typography variant="h6" fontWeight="600" gutterBottom>
-                  Fresh Food Daily
+                    Fresh Food Daily
                   </Typography>
                   <Box sx={{ color: "text.secondary" }}>
-                    <Typography variant="body2">Fix Lunch & Pack Lunch</Typography>
+                    <Typography variant="body2">
+                      Fix Lunch & Pack Lunch
+                    </Typography>
                     <Typography variant="body2">Large Dining Hall</Typography>
                     <Typography variant="body2">
-                    Multicuisine Restaurant
+                      Multicuisine Restaurant
                     </Typography>
                   </Box>
                 </CardContent>
@@ -280,8 +282,8 @@ const Restaurant = () => {
                     sx={{
                       "&:hover": {
                         transform: "scale(1.02)",
-                        transition: "transform 0.2s"
-                      }
+                        transition: "transform 0.2s",
+                      },
                     }}
                   >
                     <CardContent>
@@ -289,7 +291,7 @@ const Restaurant = () => {
                         sx={{
                           display: "flex",
                           justifyContent: "space-between",
-                          alignItems: "flex-start"
+                          alignItems: "flex-start",
                         }}
                       >
                         <Box sx={{ flex: 1 }}>
@@ -323,8 +325,26 @@ const Restaurant = () => {
         ))}
 
         <Box sx={{ textAlign: "center", mt: 8 }}>
-          <Button variant="outlined" size="large" sx={{ mr: 2 }}>
+          <Button
+            variant="outlined"
+            size="large"
+            component="a"
+            href="/OrangeMenu.pdf"
+            download
+            sx={{ mr: 2 }}
+          >
             Download Full Menu
+          </Button>
+          <Button
+            variant="outlined"
+            size="large"
+            component="a"
+            href="/OrangeMenu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ mr: 2 }}
+          >
+            View Menu
           </Button>
           {/* <Button variant="contained" size="large">
             Make Reservation
@@ -332,7 +352,7 @@ const Restaurant = () => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Restaurant
+export default Restaurant;

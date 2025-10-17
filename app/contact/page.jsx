@@ -6,9 +6,9 @@ import {
   Button,
   Card,
   CardContent,
-  Stack
-} from "@mui/material"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+  Stack,
+} from "@mui/material";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -37,7 +37,7 @@ const Contact = () => {
           sx={{
             display: "grid",
             gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
-            gap: 6
+            gap: 6,
           }}
         >
           {/* Contact Information */}
@@ -51,8 +51,8 @@ const Contact = () => {
                 sx={{
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent>
@@ -71,7 +71,7 @@ const Contact = () => {
                         Address
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                      Hotel Orange International Railway Station Main Road,
+                        Hotel Orange International Railway Station Main Road,
                         <br />
                         Near Mohan Mithai,Opp. 21st Century Hospital,
                         <br />
@@ -86,8 +86,8 @@ const Contact = () => {
                 sx={{
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent>
@@ -112,7 +112,7 @@ const Contact = () => {
                         <br />
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                      Restaurant: +91 9978382001
+                        Restaurant: +91 9978382001
                         <br />
                         Alternate: +91 261 2412002
                         <br />
@@ -126,8 +126,8 @@ const Contact = () => {
                 sx={{
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent>
@@ -161,8 +161,8 @@ const Contact = () => {
                 sx={{
                   "&:hover": {
                     transform: "scale(1.02)",
-                    transition: "transform 0.2s"
-                  }
+                    transition: "transform 0.2s",
+                  },
                 }}
               >
                 <CardContent>
@@ -208,7 +208,7 @@ const Contact = () => {
                     sx={{
                       display: "grid",
                       gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-                      gap: 2
+                      gap: 2,
                     }}
                   >
                     <TextField
@@ -262,7 +262,7 @@ const Contact = () => {
         </Box>
 
         {/* Map Section */}
-        <Box sx={{ mt: 8 }}>
+        {/* <Box sx={{ mt: 8 }}>
           <Typography
             variant="h4"
             fontWeight="bold"
@@ -291,10 +291,37 @@ const Contact = () => {
               </Typography>
             </Box>
           </Card>
+        </Box> */}
+        {/* Map Section */}
+        <Box sx={{ mt: 8 }}>
+          <Typography
+            variant="h4"
+            fontWeight="bold"
+            textAlign="center"
+            gutterBottom
+          >
+            Find Us
+          </Typography>
+
+          <Card
+            sx={{ mt: 4, boxShadow: 4, overflow: "hidden", borderRadius: 3 }}
+          >
+            <Box
+              component="iframe"
+              src="https://www.google.com/maps?ll=21.204914,72.838615&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=15487321199586300992"
+              sx={{
+                border: 0,
+                width: "100%",
+                height: 384,
+              }}
+              allowFullScreen
+              loading="lazy"
+            />
+          </Card>
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
