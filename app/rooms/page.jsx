@@ -14,67 +14,79 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  Paper
-} from "@mui/material"
-import { Phone, Users, Wifi, Coffee, Car, Utensils } from "lucide-react"
+  Paper,
+} from "@mui/material";
+import { Phone, Users, Wifi, Coffee, Car, Utensils } from "lucide-react";
 
 const Rooms = () => {
   const roomTypes = [
     {
       name: "Executive King",
-      price: "₹3,500",
-      image:"/EXECUTIVE_SINGLE.jpg",
-      capacity: "2 Guests -₹4,300",
+      prices: {
+        single: "₹3,500",
+        double: "₹4,300",
+      },
+      image: "/EXECUTIVE_SINGLE.jpg",
+      capacity: "2 Guests",
       amenities: [
         "Free WiFi",
         "LED TV",
         "Tea/Coffee Maker",
-        "24hrs Room Service"
-      ]
+        "24hrs Room Service",
+      ],
     },
     {
       name: "Executive Twin",
-      price: "₹3,500",
+      prices: {
+        single: "₹3,500",
+        double: "₹4,300",
+      },
       image: "/ED.jpg",
-      capacity: "2 Guests -₹4,300",
+      capacity: "2 Guests",
       amenities: [
         "Free WiFi",
         "LED TV",
         "Tea/Coffee Maker",
-        "24hrs Room Service"
-      ]
+        "24hrs Room Service",
+      ],
     },
     {
       name: "Superior King",
-      price: "₹4,000",
-      image:
-        "/SUPERIOR_SINGLE.jpg",
-      capacity: "2 Guests -₹4,800",
+      prices: {
+        single: "₹4,000",
+        double: "₹4,800",
+      },
+      image: "/SUPERIOR_SINGLE.jpg",
+      capacity: "2 Guests",
       amenities: [
         "Free WiFi",
         "LED TV",
         "Tea/Coffee Maker",
         "24hrs Room Service",
-        "Hair Dryer"
-      ]
+        "Hair Dryer",
+      ],
     },
     {
       name: "Superior Twin",
-      price: "₹4,000",
-      image:
-        "/SUPERIOR_DOUBLE.jpg",
-        capacity: "2 Guests -₹4,800",
-        amenities: [
+      prices: {
+        single: "₹4,000",
+        double: "₹4,800",
+      },
+      image: "/SUPERIOR_DOUBLE.jpg",
+      capacity: "2 Guests",
+      amenities: [
         "Free WiFi",
         "LED TV",
         "Tea/Coffee Maker",
         "24hrs Room Service",
-        "Hair Dryer"
-      ]
+        "Hair Dryer",
+      ],
     },
     {
       name: "Superior Triple",
-      price: "₹5,600",
+      prices: {
+        triple: "₹5,600",
+      },
       image: "/TRIPLE_BED.jpg",
       capacity: "3 Guests",
       amenities: [
@@ -82,17 +94,17 @@ const Rooms = () => {
         "LED TV",
         "Tea/Coffee Maker",
         "24hrs Room Service",
-        "Hair Dryer"
-      ]
-    }
-  ]
+        "Hair Dryer",
+      ],
+    },
+  ];
 
   const facilities = [
     { icon: Wifi, name: "Free WiFi" },
     { icon: Utensils, name: "Complimentary Breakfast" },
     { icon: Car, name: "Car Parking" },
-    { icon: Coffee, name: "24hrs Room Service" }
-  ]
+    { icon: Coffee, name: "24hrs Room Service" },
+  ];
 
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "background.default", pt: 10 }}>
@@ -118,7 +130,7 @@ const Rooms = () => {
             display: "grid",
             gridTemplateColumns: { xs: "repeat(2, 1fr)", md: "repeat(4, 1fr)" },
             gap: 3,
-            mb: 8
+            mb: 8,
           }}
         >
           {facilities.map((facility, index) => (
@@ -128,7 +140,7 @@ const Rooms = () => {
                   width: 32,
                   height: 32,
                   color: "#fb923c",
-                  marginBottom: 8
+                  marginBottom: 8,
                 }}
               />
               <Typography variant="body2" fontWeight="500">
@@ -144,14 +156,14 @@ const Rooms = () => {
             display: "grid",
             gridTemplateColumns: { xs: "1fr", md: "repeat(2, 1fr)" },
             gap: 4,
-            mb: 8
+            mb: 8,
           }}
         >
           {roomTypes.map((room, index) => (
             <Box key={index}>
               <Card
                 sx={{
-                  "&:hover": { boxShadow: 6, transition: "box-shadow 0.3s" }
+                  "&:hover": { boxShadow: 6, transition: "box-shadow 0.3s" },
                 }}
               >
                 <CardMedia
@@ -162,8 +174,8 @@ const Rooms = () => {
                   sx={{
                     "&:hover": {
                       transform: "scale(1.05)",
-                      transition: "transform 0.3s"
-                    }
+                      transition: "transform 0.3s",
+                    },
                   }}
                 />
                 <CardContent>
@@ -172,32 +184,80 @@ const Rooms = () => {
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "flex-start",
-                      mb: 2
+                      mb: 2,
+                      flexWrap: "wrap", // responsive
+                      gap: 1,
                     }}
                   >
-                    <Typography variant="h5" fontWeight="600">
+                    {/* Room Name */}
+                    <Typography
+                      variant="h5"
+                      fontWeight={600}
+                      sx={{
+                        flex: "1 1 auto",
+                        color: "text.primary",
+                        textTransform: "capitalize",
+                      }}
+                    >
                       {room.name}
                     </Typography>
-                    <Box sx={{ textAlign: "right" }}>
-                      <Typography
-                        variant="h4"
-                        fontWeight="bold"
-                        color="primary.main"
-                      >
-                        {room.price}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        per night
-                      </Typography>
+
+                    {/* Price Section */}
+                    <Box
+                      sx={{
+                        textAlign: "right",
+                        minWidth: 140,
+                      }}
+                    >
+                      {room.prices?.single && room.prices?.double ? (
+                        <>
+                          <Typography
+                            variant="h6"
+                            fontWeight="semibold"
+                            color="primary.main"
+                            sx={{ lineHeight: 1.3 }}
+                          >
+                            <Users style={{ width: 16, height: 16 }} /> {room.prices.single}
+                          </Typography>
+
+                          <Typography
+                            variant="h6"
+                            fontWeight="bold"
+                            color="primary.main"
+                            sx={{ lineHeight: 1.3 }}
+                          >
+                            <Users style={{ width: 16, height: 16 }} /> <Users style={{ width: 16, height: 16 }} /> {room.prices.double}
+                          </Typography>
+
+                          <Typography variant="caption" color="text.secondary">
+                            per night
+                          </Typography>
+                        </>
+                      ) : (
+                        <>
+                          <Typography
+                            variant="h6"
+                            fontWeight="bold"
+                            color="primary.main"
+                            sx={{ lineHeight: 1.3 }}
+                          >
+                            {room.prices?.triple}
+                          </Typography>
+                          <Typography variant="caption" color="text.secondary">
+                            per night
+                          </Typography>
+                        </>
+                      )}
                     </Box>
                   </Box>
+
                   <Box
                     sx={{
                       display: "flex",
                       alignItems: "center",
                       gap: 1,
                       mb: 2,
-                      color: "text.secondary"
+                      color: "text.secondary",
                     }}
                   >
                     <Users style={{ width: 16, height: 16 }} />
@@ -246,10 +306,10 @@ const Rooms = () => {
                       <Typography fontWeight="600">Room Type</Typography>
                     </TableCell>
                     <TableCell>
-                      <Typography fontWeight="600">King</Typography>
+                      <Typography fontWeight="600">Single</Typography>
                     </TableCell>
                     <TableCell>
-                      <Typography fontWeight="600">Twin</Typography>
+                      <Typography fontWeight="600">Double</Typography>
                     </TableCell>
                     <TableCell>
                       <Typography fontWeight="600">Triple</Typography>
@@ -311,7 +371,7 @@ const Rooms = () => {
           sx={{
             bgcolor: "primary.main",
             color: "primary.contrastText",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           <CardContent sx={{ py: 6 }}>
@@ -335,8 +395,8 @@ const Rooms = () => {
                   color: "white",
                   "&:hover": {
                     borderColor: "white",
-                    bgcolor: "rgba(255,255,255,0.1)"
-                  }
+                    bgcolor: "rgba(255,255,255,0.1)",
+                  },
                 }}
               >
                 Call: +91 261 2412001
@@ -350,8 +410,8 @@ const Rooms = () => {
                   color: "white",
                   "&:hover": {
                     borderColor: "white",
-                    bgcolor: "rgba(255,255,255,0.1)"
-                  }
+                    bgcolor: "rgba(255,255,255,0.1)",
+                  },
                 }}
               >
                 Mobile: +91 95121 32001
@@ -361,7 +421,7 @@ const Rooms = () => {
         </Card>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Rooms
+export default Rooms;

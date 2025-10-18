@@ -1,6 +1,6 @@
 "use client"
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { Geist, Geist_Mono, Outfit } from "next/font/google";
+import { Geist, Geist_Mono, Headland_One, Lato, Outfit } from "next/font/google";
 import './index.css';
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -16,13 +16,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
+const headlandOne = Headland_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-headland-one",
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${geistMono.variable}`}>
+      <body className={`${headlandOne.variable} `}>
       <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navigation />

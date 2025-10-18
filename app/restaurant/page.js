@@ -288,10 +288,12 @@ const Restaurant = () => {
                   >
                     <CardContent>
                       <Box
-                        sx={{
+                         sx={{
                           display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "flex-start",
+                          justifyContent: "center", // Center horizontally
+                          alignItems: "center",     // Center vertically (optional)
+                          flexDirection: "column",
+                          textAlign: "center",
                         }}
                       >
                         <Box sx={{ flex: 1 }}>
@@ -325,7 +327,7 @@ const Restaurant = () => {
         ))}
 
         <Box sx={{ textAlign: "center", mt: 8 }}>
-          <Button
+          {/* <Button
             variant="outlined"
             size="large"
             component="a"
@@ -334,7 +336,7 @@ const Restaurant = () => {
             sx={{ mr: 2 }}
           >
             Download Full Menu
-          </Button>
+          </Button> */}
           <Button
             variant="outlined"
             size="large"
