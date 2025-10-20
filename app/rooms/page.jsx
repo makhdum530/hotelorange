@@ -213,7 +213,7 @@ const Rooms = () => {
                         <>
                           <Typography
                             variant="h6"
-                            fontWeight="semibold"
+                            fontWeight="bold"
                             color="primary.main"
                             sx={{ lineHeight: 1.3 }}
                           >
@@ -241,7 +241,7 @@ const Rooms = () => {
                             color="primary.main"
                             sx={{ lineHeight: 1.3 }}
                           >
-                            {room.prices?.triple}
+                           <Users style={{ width: 16, height: 16 }} /> <Users style={{ width: 16, height: 16 }} /> <Users style={{ width: 16, height: 16 }} />   {room.prices?.triple}
                           </Typography>
                           <Typography variant="caption" color="text.secondary">
                             per night
@@ -251,7 +251,7 @@ const Rooms = () => {
                     </Box>
                   </Box>
 
-                  <Box
+                  {/* <Box
                     sx={{
                       display: "flex",
                       alignItems: "center",
@@ -262,7 +262,7 @@ const Rooms = () => {
                   >
                     <Users style={{ width: 16, height: 16 }} />
                     <Typography variant="body2">{room.capacity}</Typography>
-                  </Box>
+                  </Box> */}
                   <Stack
                     direction="row"
                     spacing={1}
