@@ -7,137 +7,6 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [openDialog, setOpenDialog] = useState(null)
 
-  // const galleryItems = [
-  //   {
-  //     id: 1,
-  //     image: "/gallery/front_view.JPG",
-  //     title: "Hotel Exterior",
-  //     category: "hotel",
-  //     description: "Beautiful exterior view of Hotel Orange International"
-  //   },
-  //   {
-  //     id: 2,
-  //     image: '/gallery/11.jpg',
-  //     title: "Restaurant Interior",
-  //     category: "restaurant",
-  //     description: "Elegant dining atmosphere with modern design"
-  //   },
-  //   {
-  //     id: 3,
-  //     image: "/gallery/14.jpg",
-  //     title: "Luxury Suite",
-  //     category: "parking",
-  //     description: "Spacious and comfortable accommodation"
-  //   },
-  //   {
-  //     id: 4,
-  //     image: "/gallery/15.jpg",
-  //     title: "Garden View",
-  //     category: "parking",
-  //     description: "Peaceful garden area for relaxation"
-  //   },
-    
-  //   {
-  //     id: 5,
-  //     image: "/gallery/A1.jpg",
-  //     title: "Fine Dining",
-  //     category: "hotel",
-  //     description: "Exquisite culinary presentation"
-  //   },
-  //   // {
-  //   //   id: 6,
-  //   //   image: "/gallery/banq1.jpg",
-  //   //   title: "Comfort Room",
-  //   //   category: "banquet",
-  //   //   description: "Cozy and well-appointed guest room"
-  //   // },
-  //   {
-  //     id: 6,
-  //     image: "/gallery/banq2.jpg",
-  //     title: "Hotel Exterior",
-  //     category: "banquet",
-  //     description: "Beautiful exterior view of Hotel Orange International"
-  //   },
-  //   // {
-  //   //   id: 8,
-  //   //   image: '/gallery/buffet_breakfast_1.jpg',
-  //   //   title: "Restaurant Interior",
-  //   //   category: "restaurant",
-  //   //   description: "Elegant dining atmosphere with modern design"
-  //   // },
-  //   {
-  //     id: 7,
-  //     image: "/gallery/g3.jpg",
-  //     title: "Luxury Suite",
-  //     category: "rooms",
-  //     description: "Spacious and comfortable accommodation"
-  //   },
-  //   {
-  //     id: 8,
-  //     image: "/gallery/g4.jpg",
-  //     title: "Garden View",
-  //     category: "rooms",
-  //     description: "Peaceful garden area for relaxation"
-  //   },
-    
-  //   {
-  //     id: 9,
-  //     image: "/gallery/g6.jpg",
-  //     title: "Fine Dining",
-  //     category: "rooms",
-  //     description: "Exquisite culinary presentation"
-  //   },
-  //   {
-  //     id: 10,
-  //     image: "/gallery/g7.jpg",
-  //     title: "Comfort Room",
-  //     category: "rooms",
-  //     description: "Cozy and well-appointed guest room"
-  //   },
-  //   {
-  //     id: 11,
-  //     image: "/gallery/g12.jpg",
-  //     title: "Hotel Exterior",
-  //     category: "hotel",
-  //     description: "Beautiful exterior view of Hotel Orange International"
-  //   },
-  //   {
-  //     id: 12,
-  //     image: '/gallery/Garden_01.jpg',
-  //     title: "Restaurant Interior",
-  //     category: "hotel",
-  //     description: "Elegant dining atmosphere with modern design"
-  //   },
-  //   {
-  //     id: 13,
-  //     image: "/gallery/hotel1.jpeg",
-  //     title: "Luxury Suite",
-  //     category: "hotel",
-  //     description: "Spacious and comfortable accommodation"
-  //   },
-  //   {
-  //     id: 14,
-  //     image: "/gallery/m1.jpg",
-  //     title: "Garden View",
-  //     category: "hotel",
-  //     description: "Peaceful garden area for relaxation"
-  //   },
-    
-  //   {
-  //     id: 15,
-  //     image: "/gallery/restaurant_bc.jpeg",
-  //     title: "Fine Dining",
-  //     category: "restaurant",
-  //     description: "Exquisite culinary presentation"
-  //   },
-  //   {
-  //     id: 16,
-  //     image: "/gallery/restaurant1.jpg",
-  //     title: "Restaurant",
-  //     category: "restaurant",
-  //     description: "Cozy and well-appointed guest room"
-  //   },
-  // ]
   const galleryItems = [
     {
       id: 1,
@@ -169,8 +38,8 @@ const Gallery = () => {
     },
     {
       id: 5,
-      image: "/gallery/A1.jpg",
-      title: "Fine Dining Setup",
+      image: "/gallery/reception.jpeg",
+      title: "Reception and Waiting Area",
       category: "hotel",
       description: "Beautifully arranged fine dining setup with attention to detail."
     },
@@ -184,22 +53,22 @@ const Gallery = () => {
     {
       id: 7,
       image: "/gallery/g3.jpg",
-      title: "Deluxe Room Interior",
+      title: "Room Interior",
       category: "rooms",
       description: "Comfortable deluxe room featuring modern furnishings."
     },
     {
       id: 8,
       image: "/gallery/g4.jpg",
-      title: "Room Balcony View",
+      title: "Room View",
       category: "rooms",
       description: "Balcony view from guest room offering a peaceful environment."
     },
     {
       id: 9,
       image: "/gallery/g6.jpg",
-      title: "Luxury Suite Lounge",
-      category: "rooms",
+      title: "Hotel",
+      category: "hotel",
       description: "Spacious suite lounge area designed for relaxation."
     },
     {
@@ -212,29 +81,29 @@ const Gallery = () => {
     {
       id: 11,
       image: "/gallery/g12.jpg",
-      title: "Hotel Facade",
+      title: "Waiting Area",
       category: "hotel",
       description: "Elegant facade view of Hotel Orange International."
     },
     {
       id: 12,
       image: "/gallery/Garden_01.jpg",
-      title: "Hotel Garden Area",
+      title: "The Terrace Garden",
       category: "hotel",
       description: "Beautiful landscaped garden providing a tranquil space."
     },
     {
       id: 13,
       image: "/gallery/hotel1.jpeg",
-      title: "Hotel Entrance",
+      title: "Fitness Center",
       category: "hotel",
       description: "Welcoming hotel entrance with modern architectural design."
     },
     {
       id: 14,
-      image: "/gallery/m1.jpg",
-      title: "Hotel Lobby",
-      category: "hotel",
+      image: "/gallery/meetingroom1.jpg",
+      title: "Metting Room",
+      category: "banquet",
       description: "Stylish and comfortable hotel lobby with elegant decor."
     },
     {
@@ -251,15 +120,43 @@ const Gallery = () => {
       category: "restaurant",
       description: "Warm and inviting restaurant ambiance perfect for dining."
     },
+    {
+      id: 17,
+      image: "/gallery/parking1.jpg",
+      title: "Parking Area",
+      category: "parking",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    {
+      id: 18,
+      image: "/gallery/parking2.jpg",
+      title: "Parking Area",
+      category: "parking",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    {
+      id: 19,
+      image: "/gallery/room11.jpg",
+      title: "Room",
+      category: "rooms",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    {
+      id: 20,
+      image: "/gallery/room22.jpg",
+      title: "Room",
+      category: "rooms",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
   ];
   
   const categories = [
     { id: "all", label: "All" },
     { id: "hotel", label: "Hotel" },
-    { id: "restaurant", label: "Restaurant" },
     { id: "rooms", label: "Rooms" },
+    { id: "restaurant", label: "Restaurant" },
+    { id: "banquet", label: "Banquet" },
     { id: "parking", label: "Parking" },
-    { id: "banquet", label: "Banquet" }
 
   ]
 
@@ -376,12 +273,12 @@ const Gallery = () => {
                   <Typography variant="h6" color="white" fontWeight="600">
                     {item.title}
                   </Typography>
-                  <Typography
+                  {/* <Typography
                     variant="body2"
                     sx={{ color: "rgba(255,255,255,0.8)" }}
                   >
                     {item.description}
-                  </Typography>
+                  </Typography> */}
                 </Box>
               </Box>
 
@@ -420,12 +317,12 @@ const Gallery = () => {
                     >
                       {item.title}
                     </Typography>
-                    <Typography
+                    {/* <Typography
                       variant="body1"
                       sx={{ color: "rgba(255,255,255,0.9)" }}
                     >
                       {item.description}
-                    </Typography>
+                    </Typography> */}
                   </Box>
                 </Box>
               </Dialog>

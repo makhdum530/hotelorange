@@ -141,7 +141,7 @@ const Services = () => {
         {
           icon: Sparkles,
           name: "Hair Dryer",
-          description: "Available in all rooms"
+          description: "On Demand"
         }
       ]
     }
