@@ -39,7 +39,7 @@ const Gallery = () => {
     {
       id: 5,
       image: "/gallery/reception.jpeg",
-      title: "Reception and Waiting Area",
+      title: "Reception Area",
       category: "hotel",
       description: "Beautifully arranged fine dining setup with attention to detail."
     },
@@ -53,7 +53,7 @@ const Gallery = () => {
     {
       id: 7,
       image: "/gallery/g3.jpg",
-      title: "Room Interior",
+      title: "Room View",
       category: "rooms",
       description: "Comfortable deluxe room featuring modern furnishings."
     },
@@ -66,22 +66,22 @@ const Gallery = () => {
     },
     {
       id: 9,
-      image: "/gallery/g6.jpg",
-      title: "Hotel",
+      image: "/gallery/g12.jpg",
+      title: "Waiting Area",
       category: "hotel",
       description: "Spacious suite lounge area designed for relaxation."
     },
     {
       id: 10,
       image: "/gallery/g7.jpg",
-      title: "Comfort Room",
+      title: "Room View",
       category: "rooms",
       description: "Cozy and well-appointed room for a pleasant stay."
     },
     {
       id: 11,
-      image: "/gallery/g12.jpg",
-      title: "Waiting Area",
+      image: "/gallery/g6.jpg",
+      title: "Lobby",
       category: "hotel",
       description: "Elegant facade view of Hotel Orange International."
     },
@@ -101,8 +101,8 @@ const Gallery = () => {
     },
     {
       id: 14,
-      image: "/gallery/meetingroom1.jpg",
-      title: "Metting Room",
+      image: "/gallery/crystal_banquet.jpg",
+      title: "Banquet Hall",
       category: "banquet",
       description: "Stylish and comfortable hotel lobby with elegant decor."
     },
@@ -137,16 +137,30 @@ const Gallery = () => {
     {
       id: 19,
       image: "/gallery/room11.jpg",
-      title: "Room",
+      title: "Room View",
       category: "rooms",
       description: "Warm and inviting restaurant ambiance perfect for dining."
     },
     {
       id: 20,
       image: "/gallery/room22.jpg",
-      title: "Room",
+      title: "Room View",
       category: "rooms",
       description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    {
+      id: 21,
+      image: "/gallery/EXE.jpg",
+      title: "Room View",
+      category: "rooms",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    {
+      id: 22,
+      image: "/gallery/meetingroom1.jpg",
+      title: "Metting Room",
+      category: "banquet",
+      description: "Stylish and comfortable hotel lobby with elegant decor."
     },
   ];
   

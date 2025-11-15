@@ -45,7 +45,7 @@ const ContactSection = () => {
           <Box>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <Card sx={{ boxShadow: 3 }}>
-                <CardContent sx={{ p: 4 }}>
+                <CardContent sx={{ p: 6.5 }}>
                   <Typography variant="h5" fontWeight="bold" gutterBottom>
                     Quick Actions
                   </Typography>
