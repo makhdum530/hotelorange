@@ -127,13 +127,13 @@ const Gallery = () => {
       category: "parking",
       description: "Warm and inviting restaurant ambiance perfect for dining."
     },
-    {
-      id: 18,
-      image: "/gallery/parking2.jpg",
-      title: "Parking Area",
-      category: "parking",
-      description: "Warm and inviting restaurant ambiance perfect for dining."
-    },
+    // {
+    //   id: 18,
+    //   image: "/gallery/parking2.jpg",
+    //   title: "Parking Area",
+    //   category: "parking",
+    //   description: "Warm and inviting restaurant ambiance perfect for dining."
+    // },
     {
       id: 19,
       image: "/gallery/room11.jpg",
