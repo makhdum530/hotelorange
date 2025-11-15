@@ -327,7 +327,7 @@ const Footer = () => {
             reserved.
           </Typography>
           <Typography variant="body2" color="text.secondary" textAlign="center">
-            Near Railway Station, Surat | Premium Hospitality Since Years
+            Near Railway Station, Surat | Premium Hospitality Since Years 2016
           </Typography>
         </Box>
       </Container>
