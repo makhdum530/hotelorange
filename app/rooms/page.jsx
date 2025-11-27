@@ -63,7 +63,7 @@ const Rooms = () => {
         "LED TV",
         "Tea/Coffee Maker",
         "24hrs Room Service",
-        "Hair Dryer",
+        "Hair Dryer On Demand",
       ],
     },
     {
@@ -79,7 +79,7 @@ const Rooms = () => {
         "LED TV",
         "Tea/Coffee Maker",
         "24hrs Room Service",
-        "Hair Dryer",
+        "Hair Dryer On Demand",
       ],
     },
     {
@@ -94,7 +94,7 @@ const Rooms = () => {
         "LED TV",
         "Tea/Coffee Maker",
         "24hrs Room Service",
-        "Hair Dryer",
+        "Hair Dryer On Demand",
       ],
     },
   ];

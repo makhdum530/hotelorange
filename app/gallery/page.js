@@ -16,27 +16,6 @@ const Gallery = () => {
       description: "Front view showcasing the elegant exterior of Hotel Orange International."
     },
     {
-      id: 2,
-      image: "/gallery/11.jpg",
-      title: "Restaurant Dining Area",
-      category: "restaurant",
-      description: "Modern dining area with a cozy and inviting ambiance."
-    },
-    {
-      id: 3,
-      image: "/gallery/14.jpg",
-      title: "Parking Area",
-      category: "parking",
-      description: "Spacious and well-organized parking area for guests."
-    },
-    {
-      id: 4,
-      image: "/gallery/15.jpg",
-      title: "Parking Area",
-      category: "parking",
-      description: "Spacious and well-organized parking area for guests."
-    },
-    {
       id: 5,
       image: "/gallery/reception.jpeg",
       title: "Reception Area",
@@ -44,11 +23,33 @@ const Gallery = () => {
       description: "Beautifully arranged fine dining setup with attention to detail."
     },
     {
-      id: 6,
-      image: "/gallery/banq2.jpg",
-      title: "Banquet Hall",
-      category: "banquet",
-      description: "Spacious banquet hall ideal for parties and celebrations."
+      id: 9,
+      image: "/gallery/g12.jpg",
+      title: "Waiting Area",
+      category: "hotel",
+      description: "Spacious suite lounge area designed for relaxation."
+    },
+    {
+      id: 2,
+      image: "/gallery/11.jpg",
+      title: "Restaurant Dining Area",
+      category: "restaurant",
+      description: "Modern dining area with a cozy and inviting ambiance."
+    },
+   
+    {
+      id: 16,
+      image: "/gallery/restaurant1.jpg",
+      title: "Restaurant Interior",
+      category: "restaurant",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    {
+      id: 15,
+      image: "/gallery/restaurant_bc.jpeg",
+      title: "Buffet Counter",
+      category: "restaurant",
+      description: "Delicious buffet setup offering a variety of cuisines."
     },
     {
       id: 7,
@@ -64,13 +65,7 @@ const Gallery = () => {
       category: "rooms",
       description: "Balcony view from guest room offering a peaceful environment."
     },
-    {
-      id: 9,
-      image: "/gallery/g12.jpg",
-      title: "Waiting Area",
-      category: "hotel",
-      description: "Spacious suite lounge area designed for relaxation."
-    },
+    
     {
       id: 10,
       image: "/gallery/g7.jpg",
@@ -78,62 +73,6 @@ const Gallery = () => {
       category: "rooms",
       description: "Cozy and well-appointed room for a pleasant stay."
     },
-    {
-      id: 11,
-      image: "/gallery/g6.jpg",
-      title: "Lobby",
-      category: "hotel",
-      description: "Elegant facade view of Hotel Orange International."
-    },
-    {
-      id: 12,
-      image: "/gallery/Garden_01.jpg",
-      title: "The Terrace Garden",
-      category: "hotel",
-      description: "Beautiful landscaped garden providing a tranquil space."
-    },
-    {
-      id: 13,
-      image: "/gallery/hotel1.jpeg",
-      title: "Fitness Center",
-      category: "hotel",
-      description: "Welcoming hotel entrance with modern architectural design."
-    },
-    {
-      id: 14,
-      image: "/gallery/crystal_banquet.jpg",
-      title: "Banquet Hall",
-      category: "banquet",
-      description: "Stylish and comfortable hotel lobby with elegant decor."
-    },
-    {
-      id: 15,
-      image: "/gallery/restaurant_bc.jpeg",
-      title: "Buffet Counter",
-      category: "restaurant",
-      description: "Delicious buffet setup offering a variety of cuisines."
-    },
-    {
-      id: 16,
-      image: "/gallery/restaurant1.jpg",
-      title: "Restaurant Interior",
-      category: "restaurant",
-      description: "Warm and inviting restaurant ambiance perfect for dining."
-    },
-    {
-      id: 17,
-      image: "/gallery/parking1.jpg",
-      title: "Parking Area",
-      category: "parking",
-      description: "Warm and inviting restaurant ambiance perfect for dining."
-    },
-    // {
-    //   id: 18,
-    //   image: "/gallery/parking2.jpg",
-    //   title: "Parking Area",
-    //   category: "parking",
-    //   description: "Warm and inviting restaurant ambiance perfect for dining."
-    // },
     {
       id: 19,
       image: "/gallery/room11.jpg",
@@ -156,12 +95,82 @@ const Gallery = () => {
       description: "Warm and inviting restaurant ambiance perfect for dining."
     },
     {
+      id: 11,
+      image: "/gallery/g6.jpg",
+      title: "Lobby",
+      category: "hotel",
+      description: "Elegant facade view of Hotel Orange International."
+    },
+    {
+      id: 13,
+      image: "/gallery/hotel1.jpeg",
+      title: "Fitness Center",
+      category: "hotel",
+      description: "Welcoming hotel entrance with modern architectural design."
+    },
+    {
+      id: 12,
+      image: "/gallery/Garden_01.jpg",
+      title: "The Terrace Garden",
+      category: "hotel",
+      description: "Beautiful landscaped garden providing a tranquil space."
+    },
+    {
+      id: 6,
+      image: "/gallery/banq2.jpg",
+      title: "Banquet Hall",
+      category: "banquet",
+      description: "Spacious banquet hall ideal for parties and celebrations."
+    },
+    {
       id: 22,
       image: "/gallery/meetingroom1.jpg",
       title: "Metting Room",
       category: "banquet",
       description: "Stylish and comfortable hotel lobby with elegant decor."
     },
+    
+    {
+      id: 14,
+      image: "/gallery/crystal_banquet.jpg",
+      title: "Banquet Hall",
+      category: "banquet",
+      description: "Stylish and comfortable hotel lobby with elegant decor."
+    },
+   
+    {
+      id: 3,
+      image: "/gallery/14.jpg",
+      title: "Parking Area",
+      category: "parking",
+      description: "Spacious and well-organized parking area for guests."
+    },
+    {
+      id: 4,
+      image: "/gallery/15.jpg",
+      title: "Parking Area",
+      category: "parking",
+      description: "Spacious and well-organized parking area for guests."
+    },
+    
+ 
+    
+    {
+      id: 17,
+      image: "/gallery/parking1.jpg",
+      title: "Parking Area",
+      category: "parking",
+      description: "Warm and inviting restaurant ambiance perfect for dining."
+    },
+    // {
+    //   id: 18,
+    //   image: "/gallery/parking2.jpg",
+    //   title: "Parking Area",
+    //   category: "parking",
+    //   description: "Warm and inviting restaurant ambiance perfect for dining."
+    // },
+    
+  
   ];
   
   const categories = [

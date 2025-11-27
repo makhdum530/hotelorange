@@ -125,12 +125,12 @@ const Services = () => {
       services: [
         {
           icon: Accessibility,
-          name: "Wheelchair Access",
+          name: "Wheelchair On Demand",
           description: "Accessibility for all guests"
         },
         {
           icon: HeartHandshake,
-          name: "First Aid Kit",
+          name: "First Aid Kit On Demand",
           description: "Emergency medical assistance"
         },
         {

@@ -75,9 +75,9 @@ const Terms = () => {
     "All major cards accepted",
     "Same day laundry service available",
     "Wake-up call service provided",
-    "Hair dryer available in all rooms",
+    "Hair dryer On Demand",
     "24 hours running hot and cold water",
-    "First aid kit available",
+    "First aid Kit On Demand",
     "24 hours room service available"
   ]
 
