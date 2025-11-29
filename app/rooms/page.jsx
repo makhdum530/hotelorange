@@ -217,7 +217,8 @@ const Rooms = () => {
                             color="primary.main"
                             sx={{ lineHeight: 1.3 }}
                           >
-                            <Users style={{ width: 16, height: 16 }} /> {room.prices.single}
+                            <Users style={{ width: 16, height: 16 }} />{" "}
+                            {room.prices.single}
                           </Typography>
 
                           <Typography
@@ -226,7 +227,9 @@ const Rooms = () => {
                             color="primary.main"
                             sx={{ lineHeight: 1.3 }}
                           >
-                            <Users style={{ width: 16, height: 16 }} /> <Users style={{ width: 16, height: 16 }} /> {room.prices.double}
+                            <Users style={{ width: 16, height: 16 }} />{" "}
+                            <Users style={{ width: 16, height: 16 }} />{" "}
+                            {room.prices.double}
                           </Typography>
 
                           <Typography variant="caption" color="text.secondary">
@@ -241,7 +244,10 @@ const Rooms = () => {
                             color="primary.main"
                             sx={{ lineHeight: 1.3 }}
                           >
-                           <Users style={{ width: 16, height: 16 }} /> <Users style={{ width: 16, height: 16 }} /> <Users style={{ width: 16, height: 16 }} />   {room.prices?.triple}
+                            <Users style={{ width: 16, height: 16 }} />{" "}
+                            <Users style={{ width: 16, height: 16 }} />{" "}
+                            <Users style={{ width: 16, height: 16 }} />{" "}
+                            {room.prices?.triple}
                           </Typography>
                           <Typography variant="caption" color="text.secondary">
                             per night
@@ -283,6 +289,8 @@ const Rooms = () => {
                     fullWidth
                     size="large"
                     startIcon={<Phone style={{ width: 16, height: 16 }} />}
+                    component="a"
+                    href="tel:+919512132001"
                   >
                     Book Now: +91 95121 32001
                   </Button>
